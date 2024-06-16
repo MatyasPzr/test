@@ -11,24 +11,49 @@ the input to int) and then computer decides whether the user guessed the
 number or if its lower or higher. If user guesses he wins and there is
 celebration message with congratulation to the winner.
 """
+from random import randint
+from rich import print
 
 # Asking user the range
+minRange = int(input("Enter the range min: "))
+maxRange = int(input("Enter the range max: "))
+playerLives = int(input("Enter the player lives: "))
 
 # Computer generating number
+compNum = randint(minRange, maxRange)
 
 # Greeting message
+print("Welcome to guess random number game")
+
+gameOver = False
 
 # The main loop
-
+while True:
     # Asking number
+    playerNumber = int(input("Enter the number: "))
 
     # Guess ?
+    if playerNumber == compNum:
+        break
 
     # Higher ?
-
+    elif playerNumber < compNum:
+        playerLives -= 1
+        print("[red]Higher[/red]")
     # Lower ?
+    elif playerNumber > compNum:
+        playerLives -= 1
+        print("[red]Lower[/red]")
+
+    if playerLives == 0:
+        gameOver = True
+        break
 
 # Celebration
+if gameOver:
+    print(f"[red]Game over[/red], you lost. The comp num was {compNum}")
+else:
+    print(f"[green]Congrats[/green], you won! Remaining lives {playerLives}")
 
 
 # Can you do better ? 1
@@ -38,24 +63,10 @@ his lives will decrease by one. If there are no lives remaining he lost and a me
 over prints.
 """
 
+
+
+
 # Can you do better ? 2
 """
 Add nice color formatting to your program, try using rich instead of colorma library
 """
-
-# Can you do better ? 3
-"""
-Edit the script so the computer is a cheater. But the user can never figure it out.
-- And the start of program computer may chose some number that can be later changed.
-
-Example:
-    Start:
-        - user range 0 - 100
-        - computer -> 72
-    Loop:
-        - user choice: 70
-        - computer -> lower and stick to a number 50 for example
-"""
-
-
-
