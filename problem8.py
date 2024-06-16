@@ -12,6 +12,23 @@ number or if its lower or higher. If user guesses he wins and there is
 celebration message with congratulation to the winner.
 """
 
+# Asking user the range
+
+# Computer generating number
+
+# Greeting message
+
+# The main loop
+
+    # Asking number
+
+    # Guess ?
+
+    # Higher ?
+
+    # Lower ?
+
+# Celebration
 
 
 # Can you do better ? 1
