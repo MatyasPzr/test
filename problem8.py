@@ -11,25 +11,35 @@ the input to int) and then computer decides whether the user guessed the
 number or if its lower or higher. If user guesses he wins and there is
 celebration message with congratulation to the winner.
 """
+from random import randint
 
 # Asking user the range
+minRange = int(input("Enter the range (min): "))
+maxRange = int(input("Enter the range (max): "))
 
 # Computer generating number
+comNum = randint(minRange, maxRange)
 
 # Greeting message
+print("Welcome to guess the number game. Computer just chose a number in range you specified.")
 
 # The main loop
-
+while True:
     # Asking number
+    number = int(input("Enter number: "))
 
     # Guess ?
-
+    if number == comNum:
+        break
     # Higher ?
-
+    elif number > comNum:
+        print("Computer number is Lower")
     # Lower ?
+    elif number < comNum:
+        print("Computer number is Higher")
 
 # Celebration
-
+print("Congratulation you won!")
 
 # Can you do better ? 1
 """
