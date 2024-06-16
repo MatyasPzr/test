@@ -65,8 +65,8 @@ over prints.
 
 
 
-
 # Can you do better ? 2
 """
 Add nice color formatting to your program, try using rich instead of colorma library
 """
+
