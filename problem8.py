@@ -43,19 +43,4 @@ over prints.
 Add nice color formatting to your program, try using rich instead of colorma library
 """
 
-# Can you do better ? 3
-"""
-Edit the script so the computer is a cheater. But the user can never figure it out.
-- And the start of program computer may chose some number that can be later changed.
-
-Example:
-    Start:
-        - user range 0 - 100
-        - computer -> 72
-    Loop:
-        - user choice: 70
-        - computer -> lower and stick to a number 50 for example
-"""
-
-
 
