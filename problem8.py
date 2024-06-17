@@ -27,15 +27,6 @@ print("Welcome to guess random number game")
 
 gameOver = False
 
-# Asking user the range
-minRange = int(input("Enter the range (min): "))
-maxRange = int(input("Enter the range (max): "))
-
-# Computer generating number
-comNum = randint(minRange, maxRange)
-
-# Greeting message
-print("Welcome to guess the number game. Computer just chose a number in range you specified.")
 
 # The main loop
 while True:
